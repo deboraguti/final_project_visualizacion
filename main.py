@@ -48,26 +48,26 @@ GEO_MAP_ACT_OCP = {
 }
 
 COLORS_ACT = {
-    "Agricultura, ganadería y pesca": "#66bb6a",
-    "Construcción": "#ffb74d",
-    "Industria": "#90caf9",
-    "No consta": "#78909c",
-    "Servicios": "#ef5350",
+    "Agricultura, ganadería y pesca": "#009E73",  
+    "Construcción": "#E69F00",                    
+    "Industria": "#0072B2",                       
+    "No consta": "#DADDE0",                        
+    "Servicios": "#CC79A7",                        
 }
 
 COLORS_OCP = {
-    "Directores/gerentes y profesionales/técnicos de nivel medio o alto": "#42a5f5",
-    "No consta": "#78909c",
-    "Ocupaciones elementales": "#ef5350",
-    "Trabajadores cualificados y oficiales/operarios de nivel bajo": "#ffca28",
+    "Directores/gerentes y profesionales/técnicos de nivel medio o alto": "#E69F00",  
+    "No consta": "#DADDE0",                                                    
+    "Ocupaciones elementales": "#009E73",                                       
+    "Trabajadores cualificados y oficiales/operarios de nivel bajo": "#CC79A7", 
 }
 
 COLORS_RENTA = {
-    "Otras prestaciones": "#ce93d8",
-    "Otros ingresos": "#80cbc4",
-    "Pensiones": "#ffb74d",
-    "Prestaciones por desempleo": "#ef5350",
-    "Sueldos y salarios": "#42a5f5",
+    "Otras prestaciones": "#DADDE0",       
+    "Otros ingresos": "#009E73",            
+    "Pensiones": "#E69F00",                  
+    "Prestaciones por desempleo": "#0072B2",
+    "Sueldos y salarios": "#CC79A7",        
 }
 
 REN_COLS = [

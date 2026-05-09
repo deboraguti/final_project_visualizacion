@@ -311,7 +311,7 @@ def group_by_town(df, year_col, cat_col, value_col):
     df_pct = (
         df
         .groupby([year_col, 'municipio', cat_col])[value_col]
-        .sum()
+        .sum() #Sum (women + men, in example)
         .reset_index()
     )
     totals = df_pct.groupby([year_col, 'municipio'])[value_col].transform('sum')
@@ -580,7 +580,7 @@ def check_plots_exist(plots_dict):
         AssetCheckResult that fails if any file is missing or smaller than 1 KB.
     """
     missing = [p for p in plots_dict.values() if not os.path.exists(p)]
-    empty   = [p for p in plots_dict.values() if os.path.exists(p) and os.path.getsize(p) < 1024]
+    empty = [p for p in plots_dict.values() if os.path.exists(p) and os.path.getsize(p) < 1024]
     passed = len(missing) == 0 and len(empty) == 0
     return AssetCheckResult(
         passed=passed,
@@ -614,7 +614,7 @@ def plot_stacked_bar(df_pct, cat_col, title, colors):
         + coord_flip() 
         + theme_minimal()
         + labs(title=title, x='', y='Proporción', fill='')
-        + theme(figure_size=(10, 8), legend_position='bottom')
+        + theme(figure_size=(15, 11), legend_position='bottom')
     )
 
 @asset
